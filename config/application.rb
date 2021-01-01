@@ -18,5 +18,8 @@ module Myapp
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
+
+    # uuidの設定
+    config.active_record.primary_key = :uuid
   end
 end

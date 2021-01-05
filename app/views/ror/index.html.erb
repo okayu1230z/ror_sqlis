@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login</title>
+  </head>
+  <body>
+    <h1>Login</h1>
+    <%= form_tag("/ror/login", method: "post") do %>
+        <%= label_tag(:nickname, "Nickname:") %>
+        <%= text_field_tag(:nickname) %>
+        <br>
+        <%= label_tag(:password, "Password:") %>
+        <%= text_field_tag(:password) %>
+        <%= submit_tag("Submit") %>
+      <% end %>
+
+    <p>Time: <%= Time.current %></p>
+  </body>
+</html>

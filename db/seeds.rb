@@ -6,13 +6,17 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-#user = User.create!(nickname: 'nickname', email: 'test@test.com', password: 'password', age: 25)
-#Article.create!(id: 2, user_id: "4c603640-af5e-46c2-a18b-e63b047d064c", title: "aaa", content: "aaa")
+User.create!(
+    nickname: 'honda',
+    email: 'keisuke.honda@au.com',
+    password: 'm3bCHIrnov',
+    age: 25,
+)
 
 User.create!(
-    nickname: 'nickname',
-    email: 'test@test.com',
-    password: 'password',
+    nickname: 'WaniHackase',
+    email: 'waniwani@waniwani.ac.jp',
+    password: 'FgkmcSFk2i',
     age: 25,
 ).tap do |u|
     u.articles.create!
@@ -29,3 +33,4 @@ User.create!(
         }
     ]
 end
+

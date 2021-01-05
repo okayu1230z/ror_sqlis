@@ -20,7 +20,7 @@ ActiveRecord::Schema.define(version: 2020_12_31_141508) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "users", id: { type: :string, comment: "プライマリキー" }, charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
+  create_table "users", id: :string, charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.string "nickname", null: false
     t.string "email", null: false
     t.string "password", null: false

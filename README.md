@@ -48,7 +48,7 @@ Railsアプリに対してアクセスが来たとき、RailsはどのURIにど�
 
 さて、index関数は何も書いていない空の関数です。
 
-この場合、アプリは[index.html.erb](./app/views/index.html.erb)の中身をすぐに用意します。
+この場合、アプリは[index.html.erb](./app/views/ror/index.html.erb)の中身をすぐに用意します。
 
 このerbファイルからHTMLが作成され、ユーザーに表示されるという仕組みなっております。
 

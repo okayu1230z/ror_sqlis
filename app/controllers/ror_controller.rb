@@ -9,7 +9,7 @@ class RorController < ApplicationController
 
     puts result
     if result.to_a.size == 1
-      render plain: 'FLAG{dummy_flag}'
+      render plain: 'FLAG{ror_sqli}'
       return
     end
 

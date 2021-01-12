@@ -1,6 +1,5 @@
 class User < ApplicationRecord
     before_create :generate_token
-    has_many :articles, dependent: :destroy
 
     def generate_token
         self.id = loop do

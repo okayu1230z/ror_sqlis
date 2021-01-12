@@ -44,11 +44,11 @@ Railsアプリに対してアクセスが来たとき、RailsはどのURIにど�
   get 'ror/index'
 ```
 
-とあるので、[ror_controller.rb](./controllers/ror_controller.rb)のindex関数によって処理されることが定義されています。
+とあるので、[ror_controller.rb](./app/controllers/ror_controller.rb)のindex関数によって処理されることが定義されています。
 
 さて、index関数は何も書いていない空の関数です。
 
-この場合、アプリは[index.html.erb](./ror/views/index.html.erb)の中身をすぐに用意します。
+この場合、アプリは[index.html.erb](./app/views/index.html.erb)の中身をすぐに用意します。
 
 このerbファイルからHTMLが作成され、ユーザーに表示されるという仕組みなっております。
 
@@ -77,7 +77,7 @@ index.html.erbを眺めてみましょう。
 
 ユーザの入力を受け付けるRailsのAction Viewのフォームヘルパー```form_tag```、```label_tag```などがあります。
 
-さて、上記コードによって```/ror/login```というURIにニックネームとパスワードの情報がpostされますが、routingを確認してみるとは[ror_controller.rb](./controllers/ror_controller.rb)のlogin関数によって処理されることが定義されています。
+さて、上記コードによって```/ror/login```というURIにニックネームとパスワードの情報がpostされますが、routingを確認してみるとは[ror_controller.rb](./app/controllers/ror_controller.rb)のlogin関数によって処理されることが定義されています。
 
 login関数は以下のようになっております。
 
